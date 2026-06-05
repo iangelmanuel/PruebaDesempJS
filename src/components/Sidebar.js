@@ -7,6 +7,7 @@ export default function Sidebar() {
       .querySelector("#logoutBtn")
       ?.addEventListener("click", () => {
         navigateTo("/");
+        removeSession()
       });
   });
 
@@ -36,3 +37,5 @@ export default function Sidebar() {
     </aside>
   `;
 }
+
+
